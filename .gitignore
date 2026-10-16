@@ -1,0 +1,8 @@
+# PHP 运行时（本地使用，不入仓库）
+后端版/php/
+后端版/out/
+
+# 系统文件
+Thumbs.db
+Desktop.ini
+.DS_Store

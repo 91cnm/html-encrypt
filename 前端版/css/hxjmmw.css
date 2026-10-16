@@ -1,0 +1,119 @@
+:root {
+    --bg: #0a0a0a;
+    --text: #e0e0e0;
+    --accent: #ff6b6b;
+    --gap: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: var(--gap);
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: var(--gap);
+    flex-grow: 1;
+}
+
+/* QQ群样式 */
+.qq-group {
+    background: #333;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: var(--gap);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9em;
+}
+
+.qq-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.config-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--gap);
+    margin: var(--gap) 0;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: var(--text);
+    padding: 1rem;
+    margin: var(--gap) 0;
+    font-family: monospace;
+    resize: vertical;
+}
+
+.btn-group {
+    display: flex;
+    gap: var(--gap);
+    flex-wrap: wrap;
+    margin: var(--gap) 0;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    color: var(--text);
+    cursor: pointer;
+    flex: 1;
+    transition: filter 0.3s;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+#status {
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: var(--gap) 0;
+    transition: opacity 0.3s;
+}
+
+.success { 
+    background: #2ecc71; 
+}
+
+.error { 
+    background: #e74c3c; 
+}
+
+.range-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="range"] {
+    flex: 1;
+    height: 5px;
+    background: #333;
+    border-radius: 5px;
+}
